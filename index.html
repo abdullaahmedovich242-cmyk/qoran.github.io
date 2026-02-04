@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коран | Чтение шейха Люхайдана</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Боковая панель для навигации -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">ق</div>
+                <div class="logo-text">
+                <h1>IBN AHMAD</h1>
+                    <h2>Коран</h2>
+                    <p>Шейх Люхайдан</p>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="sidebar-content">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <h3>Слушатель Корана</h3>
+                    <p>Благословенного чтения</p>
+                </div>
+            </div>
+            
+            <div class="nav-section">
+                <h4 class="nav-title">Навигация</h4>
+                <ul class="nav-menu">
+                    <li class="nav-item active">
+                        <i class="fas fa-home"></i>
+                        <span>Главная</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-quran"></i>
+                        <span>Все суры</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Избранное</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-history"></i>
+                        <span>История</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Настройки</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="playlist">
+                <h4 class="nav-title">Популярные суры</h4>
+                <div class="playlist-items">
+                    <div class="playlist-item" data-surah="1">
+                        <div class="playlist-number">1</div>
+                        <div class="playlist-info">
+                            <h5>Аль-Фатиха</h5>
+                            <p>Открывающая Коран</p>
+                        </div>
+                        <div class="playlist-time">4:18</div>
+                    </div>
+                    <div class="playlist-item" data-surah="36">
+                        <div class="playlist-number">36</div>
+                        <div class="playlist-info">
+                            <h5>Йа Син</h5>
+                            <p>Сердце Корана</p>
+                        </div>
+                        <div class="playlist-time">22:45</div>
+                    </div>
+                    <div class="playlist-item" data-surah="67">
+                        <div class="playlist-number">67</div>
+                        <div class="playlist-info">
+                            <h5>Аль-Мульк</h5>
+                            <p>Защита от могильных мук</p>
+                        </div>
+                        <div class="playlist-time">11:32</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <span>Тёмная тема</span>
+            </div>
+            <p class="copyright">© 2026Коран Онлайн</p>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Верхняя панель -->
+        <header class="top-bar">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Поиск суры или аята...">
+            </div>
+            <div class="top-bar-actions">
+                <button class="action-btn">
+                    <i class="fas fa-download"></i>
+                    <span>Скачать</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-share-alt"></i>
+                    <span>Поделиться</span>
+                </button>
+                <div class="user-menu">
+                    <div class="user-avatar-small">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Герой-секция -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <div class="arabic-pattern">﷽</div>
+            </div>
+            <div class="hero-content">
+                <h1>Священный Коран</h1>
+                <p class="hero-subtitle">В исполнении шейха Али бин Абдуллаха Люхайдана</p>
+                <p class="hero-verse">"Слушайте Коран, и, быть может, вы будете помилованы"</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>114</h3>
+                        <p>Сур</p>
+                    </div>
+                    <div class="stat">
+                        <h3>6,236</h3>
+                        <p>Аятов</p>
+                    </div>
+                    <div class="stat">
+                        <h3>77,430</h3>
+                        <p>Слов</p>
+                    </div>
+                    <div class="stat">
+                        <h3>∞</h3>
+                        <p>Благословений</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Основной аудиоплеер -->
+        <section class="player-section">
+            <div class="player-card">
+                <div class="player-cover">
+                    <div class="cover-image">
+                        <img src="photos/sheikh1.jpg" alt="Шейх Лухайдан">
+                        <div class="cover-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="cover-info">
+                        <h2 id="current-surah-title">Аль-Фатиха</h2>
+                        <p id="current-surah-desc">Открывающая сура Корана</p>
+                        <div class="cover-actions">
+                            <button class="cover-btn">
+                                <i class="fas fa-heart"></i>
+                                В избранное
+                            </button>
+                            <button class="cover-btn">
+                                <i class="fas fa-share"></i>
+                                Поделиться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-controls">
+                    <div class="player-progress">
+                        <div class="progress-time" id="current-time">0:00</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="progress-time" id="total-time">0:00</div>
+                    </div>
+                    
+                    <div class="control-buttons">
+                        <button class="control-btn" id="shuffle-btn" title="Перемешать">
+                            <i class="fas fa-random"></i>
+                        </button>
+                        <button class="control-btn" id="prev-btn" title="Предыдущая">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button class="control-btn play-btn" id="play-btn" title="Воспроизвести">
+                            <i class="fas fa-play" id="play-icon"></i>
+                        </button>
+                        <button class="control-btn" id="next-btn" title="Следующая">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                        <button class="control-btn" id="repeat-btn" title="Повтор">
+                            <i class="fas fa-redo"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="player-options">
+                        <div class="volume-control">
+                            <i class="fas fa-volume-up" id="volume-icon"></i>
+                            <input type="range" id="volume-slider" min="0" max="100" value="70">
+                        </div>
+                        <div class="playback-speed">
+                            <button class="speed-btn" data-speed="0.5">0.5x</button>
+                            <button class="speed-btn active" data-speed="1">1x</button>
+                            <button class="speed-btn" data-speed="1.5">1.5x</button>
+                            <button class="speed-btn" data-speed="2">2x</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Список всех сур -->
+        <section class="surahs-section">
+            <div class="section-header">
+                <h2>Все суры Корана</h2>
+                <div class="section-actions">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active">Все (114)</button>
+                        <button class="filter-btn">Мекканские</button>
+                        <button class="filter-btn">Мединские</button>
+                        <button class="filter-btn">Избранное</button>
+                    </div>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="surahs-container">
+                <div class="surahs-grid" id="surahs-grid">
+                    <!-- Суры будут добавлены через JavaScript -->
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="page-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                    Назад
+                </button>
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <span>...</span>
+                    <button class="page-number">12</button>
+                </div>
+                <button class="page-btn next-btn">
+                    Вперед
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Информация о шейхе -->
+        <section class="sheikh-section">
+            <div class="sheikh-card">
+                <div class="sheikh-image">
+                    <img src="photos/sheikh2.jpg" alt="Шейх Люхайдан">
+                </div>
+                <div class="sheikh-info">
+                    <h2>Шейх Али бин Абдуллах Люхайдан</h2>
+                    <p class="sheikh-title">Известный чтец Корана из Саудовской Аравии</p>
+                    <div class="sheikh-bio">
+                        <p>Один из самых известных чтецов Корана современности. Его чтение отличается уникальным мелодичным голосом, точным произношением и глубоким пониманием таджвида.</p>
+                        <p>Шейх Люхйдан получил иджазу (лицензию) на чтение Корана от известных чтецов и преподаёт таджвид в различных исламских университетах.</p>
+                    </div>
+                    <div class="sheikh-stats">
+                        <div class="sheikh-stat">
+                            <i class="fas fa-microphone"></i>
+                            <div>
+                                <h4>30+ лет</h4>
+                                <p>Чтения Корана</p>
+                            </div>
+                        </div>
+                        <div class="sheikh-stat">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>5,000+</h4>
+                                <p>Студентов</p>
+                            </div>
+                        </div>
+                        <div class="sheikh-stat">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>50+ стран</h4>
+                                <p>Выступлений</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Коран Онлайн</h3>
+                    <p>Платформа для прослушивания и изучения Священного Корана с чтением лучших чтецов мира.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Все суры</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">О шейхе</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">Частые вопросы</a></li>
+                        <li><a href="#">Как скачать</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Пожертвования</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@quran-luhaydan.ru</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+7 932 474 43 84</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Кизилюрт Дагестан</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Коран Онлайн. Все права защищены. Сайт создан с благословением для всех мусульман.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">Карта сайта</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Аудио элемент -->
+    <audio id="audio-player" preload="metadata"></audio>
+
+    <!-- Скрипт -->
+    <script src="script.js"></script>
+</body>
+</html>
